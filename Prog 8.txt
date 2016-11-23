@@ -12,7 +12,7 @@ int main(void)
   returnArray(ARRAY_SIZE, foo);
 }
 void returnArray(int size, char *retArray)
-{
+{dfdfdf
   // work directly with retArray or memcpy into it from elsewhere like
   // memcpy(retArray, localArray, size); 
 }
