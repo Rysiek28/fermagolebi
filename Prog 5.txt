@@ -1,0 +1,86 @@
+  #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+
+    typedef
+    struct 
+    {
+        char v[10];
+    } CHAR_ARRAY;
+
+
+
+    CHAR_ARRAY returnArray(CHAR_ARRAY array_in, int size)
+    {
+        CHAR_ARRAY returned;
+
+        /*
+        . . . methods to pull values from array, interpret them, and then create new array
+        */
+
+        for (int i = 0;  i < size; i++ )
+            returned.v[i] = array_in.v[i] + 1;
+
+        return returned; // Works!
+    } 
+
+
+
+
+    int main(int argc, char * argv[])
+    {
+        CHAR_ARRAY array = {1,0,0,0,0,1,1};
+
+        char arrayCount = 7;
+
+        CHAR_ARRAY returnedArray = returnArray(array, arrayCount); 
+
+        for (int i = 0; i < arrayCount; i++)
+            printf("%d, ", returnedArray.v[i]);  //is this correctly formatted?
+
+        getchar();
+        return 0;
+    }
+  #include <stdio.h>
+    #include <stdlib.h>
+    #include <string.h>
+
+    typedef
+    struct 
+    {
+        char v[10];
+    } CHAR_ARRAY;
+
+
+
+    CHAR_ARRAY returnArray(CHAR_ARRAY array_in, int size)
+    {
+        CHAR_ARRAY returned;
+
+        /*
+        . . . methods to pull values from array, interpret them, and then create new array
+        */
+
+        for (int i = 0;  i < size; i++ )
+            returned.v[i] = array_in.v[i] + 1;
+
+        return returned; // Works!
+    } 
+
+
+
+
+    int main(int argc, char * argv[])
+    {
+        CHAR_ARRAY array = {1,0,0,0,0,1,1};
+
+        char arrayCount = 7;
+
+        CHAR_ARRAY returnedArray = returnArray(array, arrayCount); 
+
+        for (int i = 0; i < arrayCount; i++)
+            printf("%d, ", returnedArray.v[i]);  //is this correctly formatted?
+
+        getchar();
+        return 0;
+    }

@@ -1,0 +1,52 @@
+void returnArray(int size, char *retArray)
+{
+  // work directly with retArray or memcpy into it from elsewhere like
+  // memcpy(retArray, localArray, size); 
+}
+
+#define ARRAY_SIZE 20
+
+int main(void)
+{
+  char foo[ARRAY_SIZE];
+  returnArray(ARRAY_SIZE, foo);
+}
+void returnArray(int size, char *retArray)
+{
+  // work directly with retArray or memcpy into it from elsewhere like
+  // memcpy(retArray, localArray, size); 
+}
+
+#define ARRAY_SIZE 20
+
+int main(void)
+{
+  char foo[ARRAY_SIZE];
+  returnArray(ARRAY_SIZE, foo);
+}
+void returnArray(int size, char *retArray)
+{
+  // work directly with retArray or memcpy into it from elsewhere like
+  // memcpy(retArray, localArray, size); 
+}
+
+#define ARRAY_SIZE 20
+
+int main(void)
+{
+  char foo[ARRAY_SIZE];
+  returnArray(ARRAY_SIZE, foo);
+}
+void returnArray(int size, char *retArray)
+{
+  // work directly with retArray or memcpy into it from elsewhere like
+  // memcpy(retArray, localArray, size); 
+}
+
+#define ARRAY_SIZE 20
+
+int main(void)
+{
+  char foo[ARRAY_SIZE];
+  returnArray(ARRAY_SIZE, foo);
+}

@@ -1,0 +1,40 @@
+char *returnArray(char array []){
+ char returned [10];
+char *foo(int count) {
+    char *ret = malloc(count);
+    if(!ret)
+        return NULL;
+
+    for(int i = 0; i < count; ++i) 
+        ret[i] = i;
+
+    return ret;
+}
+Call it like so:
+
+int main() {
+    char *p = foo(10);
+    if(p) {
+        // do stuff with p
+        free(p);
+    }
+
+    return 0;
+}
+Option 2 (caller allocates buf and passes to the function)
+
+void foo(char *buf, int count) {
+    for(int i = 0; i < count; ++i)
+        buf[i] = i;
+}
+And call it like so:
+
+int main() {
+    char arr[10] = {0};
+    foo(arr, 10);
+    // no need to deallocate, we allocated 
+    // arr with automatic storage duration.
+    // if we had dynamically allocated it
+    // (i.e., malloc or some variant) then we 
+    // would need to call free(p)
+}

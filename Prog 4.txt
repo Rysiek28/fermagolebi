@@ -1,0 +1,51 @@
+char * returnArray(char *arr, int size) {
+    char *new_arr = malloc(sizeof(char) * size);
+    for(int i = 0; i < size; ++i) {
+        new_arr[i] = arr[i];
+    }
+    return new_arr;
+}
+
+int main() {
+
+    char arr[7]= {1,0,0,0,0,1,1};
+    char *new_arr = returnArray(arr, 7);
+
+    // don't forget to free the memory after you're done with the array
+    free(new_arr);
+
+}
+char * returnArray(char *arr, int size) {
+    char *new_arr = malloc(sizeof(char) * size);
+    for(int i = 0; i < size; ++i) {
+        new_arr[i] = arr[i];
+    }
+    return new_arr;
+}
+
+int main() {
+
+    char arr[7]= {1,0,0,0,0,1,1};
+    char *new_arr = returnArray(arr, 7);
+
+    // don't forget to free the memory after you're done with the array
+    free(new_arr);
+
+}
+char * returnArray(char *arr, int size) {
+    char *new_arr = malloc(sizeof(char) * size);
+    for(int i = 0; i < size; ++i) {
+        new_arr[i] = arr[i];
+    }
+    return new_arr;
+}
+
+int main() {
+
+    char arr[7]= {1,0,0,0,0,1,1};
+    char *new_arr = returnArray(arr, 7);
+
+    // don't forget to free the memory after you're done with the array
+    free(new_arr);
+
+}
