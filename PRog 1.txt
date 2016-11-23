@@ -1,4 +1,4 @@
-char *returnArray(char array []){
+char *returnArray(char array []){ nowy tekst z edycji
  char returned [10];
  //methods to pull values from array, interpret them, and then create new array
  return &(returned[0]); //is this correct?
