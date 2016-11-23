@@ -1,0 +1,117 @@
+void returnArray(const char *srcArray, size_t srcSize, char *dstArray, char dstSize)
+{
+  ...
+  dstArray[i] = some_value_derived_from(srcArray[i]);
+  ...
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char dst[sizeof src];
+  ...
+  returnArray(src, sizeof src, dst, sizeof dst);
+  ...
+}
+Another method is for the function to allocate the array dynamically and return the pointer and size:
+
+char *returnArray(const char *srcArray, size_t srcSize, size_t *dstSize)
+{
+  char *dstArray = malloc(srcSize);
+  if (dstArray)
+  {
+    *dstSize = srcSize;
+    ...
+  }
+  return dstArray;
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char *dst;
+  size_t dstSize;
+
+  dst = returnArray(src, sizeof src, &dstSize);
+  ...
+  free(dst);
+  ...
+}
+void returnArray(const char *srcArray, size_t srcSize, char *dstArray, char dstSize)
+{
+  ...
+  dstArray[i] = some_value_derived_from(srcArray[i]);
+  ...
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char dst[sizeof src];
+  ...
+  returnArray(src, sizeof src, dst, sizeof dst);
+  ...
+}
+Another method is for the function to allocate the array dynamically and return the pointer and size:
+
+char *returnArray(const char *srcArray, size_t srcSize, size_t *dstSize)
+{
+  char *dstArray = malloc(srcSize);
+  if (dstArray)
+  {
+    *dstSize = srcSize;
+    ...
+  }
+  return dstArray;
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char *dst;
+  size_t dstSize;
+
+  dst = returnArray(src, sizeof src, &dstSize);
+  ...
+  free(dst);
+  ...
+}
+void returnArray(const char *srcArray, size_t srcSize, char *dstArray, char dstSize)
+{
+  ...
+  dstArray[i] = some_value_derived_from(srcArray[i]);
+  ...
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char dst[sizeof src];
+  ...
+  returnArray(src, sizeof src, dst, sizeof dst);
+  ...
+}
+Another method is for the function to allocate the array dynamically and return the pointer and size:
+
+char *returnArray(const char *srcArray, size_t srcSize, size_t *dstSize)
+{
+  char *dstArray = malloc(srcSize);
+  if (dstArray)
+  {
+    *dstSize = srcSize;
+    ...
+  }
+  return dstArray;
+}
+
+int main(void)
+{
+  char src[] = "This is a test";
+  char *dst;
+  size_t dstSize;
+
+  dst = returnArray(src, sizeof src, &dstSize);
+  ...
+  free(dst);
+  ...
+}
